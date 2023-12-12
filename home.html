@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title></title>
+
+    <style>
+
+
+        /*page loaders*/
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            border: 16px solid white;
+            border-radius: 50%;
+            border-top: 16px solid orangered;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Oswald"
+        }
+
+        body {
+            font-family: "Open Sans";
+        }
+
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+
+
+
+    </style>
+</head>
+<body onload="myFunction()">
+    <div id="loader"></div>
+
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <!-- Navigation bar with social media icons -->
+        <div class="w3-bar w3-black w3-hide-small">
+
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+
+            <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+
+        </div>
+
+        <!-- w3-content defines a container for fixed size centered content,
+        and is wrapped around the whole page content, except for the footer in this example -->
+        <div class="w3-content" style="max-width:1600px">
+
+            <!-- Header -->
+            <header class="w3-container w3-center w3-padding-48 w3-black">
+                <h1 class="w3-xxxlarge"><b>Makhado General</b></h1>
+                <h6>Welcome to Makhado General  <span class="w3-tag">Trading and Service</span></h6>
+            </header>
+
+            <!-- Image header -->
+            <header class="w3-display-container w3-wide" id="home">
+                <img  class="w3-image" src="images/tcsud9kpljx11.jpg" alt="Fashion Blog" width="1600" height="1060">
+                <div class="w3-display-left w3-padding-large">
+                    <h1 onclick="Admin.html" class="w3-text-white">Book your</h1>
+                    <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Self an appointment today</b></h1>
+                    <h6><button class="w3-button w3-orange w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.location='book.html'">Book</button></h6>
+                </div>
+            </header>
+
+            <!-- Grid -->
+            <div class="w3-row w3-padding w3-border">
+
+                <!-- Blog entries -->
+                <div class="w3-col l8 s12">
+
+                    <!-- Blog entry -->
+                    <div class="w3-container w3-white w3-margin w3-padding-large">
+                        <div class="w3-center">
+                            <h3>Makhado General</h3>
+                            <h5>new website for Makhado <span class="w3-opacity"></span></h5>
+                        </div>
+
+                        <div class="w3-justify">
+                           
+                            <p>
+                                <strong>MK!</strong>Introducing the Makhado General Garage's New Website
+                                We are thrilled to announce the launch of the Makhado General Garage's brand-new website! Our team has been working tirelessly to create an online platform that will enhance your experience with us and provide you with all the necessary information you need.
+                                At Makhado General Garage, we understand the importance of a user-friendly website that reflects our professionalism and commitment to excellence. With this in mind, we have revamped our online presence to ensure a seamless and engaging experience for our valued customers.
+                                Our new website boasts a sleek and modern design, making it easier than ever to navigate through our services, promotions, and contact information. Whether you're in need of vehicle repairs, maintenance, or simply seeking expert advice, our website is your one-stop destination.
+                                Furthermore, we have incorporated a user-friendly interface that allows you to effortlessly book appointments, request quotes, and browse our extensive range of services. Our goal is to provide you with a hassle-free experience, saving you time and effort.
+                                In addition to our improved functionality, we have also enriched our website with informative content. We value your feedback and are committed to providing prompt and reliable assistance.
+                                We invite you to explore our new website and discover the range of services we offer. Whether you're a long-time customer or new to Makhado General Garage, we guarantee an enhanced online experience that aligns with our commitment to excellence.
+                                Thank you for your continued support, and we look forward to serving you through our new website.
+                            </p>
+
+
+                            <p class="w3-clear"></p>
+
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Blog entry -->
+                    <div class="w3-container w3-orange w3-margin w3-padding-large">
+                        <div class="w3-center">
+                            <h3>About Makhado</h3>
+                            <h5>what is makhado <span class="w3-opacity">?</span></h5>
+                        </div>
+
+                        <div class="w3-justify">
+
+                            <p>
+                                Makhado General Garage is a bustling hub of activity, situated in the heart of the vibrant town of Makhado. As you step inside, the air is filled with the scent of oil and gasoline,
+                                and the sound of engines humming fills your ears.
+                                This garage has become a trusted name in the community, known for its exceptional service and skilled mechanics.Makhado General Garage offers a wide range of services to cater to every customer's needs.
+                                From routine oil changes and tire rotations to complex engine repairs and diagnostics, they have the expertise to handle it all.
+                            </p>
+
+                            <h6><button class="w3-button w3-black w3-padding-large w3-large " onclick="document.location='About us.html'">More about us</button></h6>
+                            <p class="w3-clear"></p>
+
+                            <!-- Example of comment field -->
+                            <div id="demo2" style="display:none">
+                                <div class="w3-row">
+                                    <hr>
+                                    <div class="w3-col l2 m3">
+                                        <img src="/w3images/girl_train.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="w3-col l10 m9">
+                                        <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                                        <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                                    </div>
+                                </div>
+                                <div class="w3-row w3-margin-bottom">
+                                    <div class="w3-col l2 m3">
+                                        <img src="/w3images/girl.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="w3-col l10 m9">
+                                        <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                                        <p>Love hats!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog entry -->
+                    <!-- END BLOG ENTRIES -->
+                </div>
+
+                <!-- About/Information menu -->
+                <div class="w3-col l4">
+                    <!-- About Card -->
+                    <div class="w3-orange w3-margin">
+                        
+                        <div class="w3-container w3-orange">
+                            <h4>Services</h4>
+                            <p>
+                                See the type of services that we offer
+                            </p>
+                            <button class="w3-button w3-black w3-padding-large w3-large " onclick="document.location='Services.html'">Services</button>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Posts -->
+                    <div class="w3-white w3-margin">
+                        <div class="w3-container w3-padding w3-orange">
+                            <h4>Types of Service</h4>
+                        </div>
+                        <ul class="w3-ul w3-hoverable w3-white">
+                            <li class="w3-padding-16">
+                                <img src="images/gearbox and propshaft.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">gearbox and propshaft</span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+                                <img src="images/engine overhaul.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">engine overhaul</span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+                                <img src="images/suspension reapirs.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large">Suspension repairs</span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+                                <img src="images/AutoDiagnosis.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+                                <span class="w3-large">Electronic Diagnoses</span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+                                <img src="images/Car-Repair-and-Maintenance.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+                                <span class="w3-large">vehicle maintenance and service</span>
+                                <br>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="w3-white w3-margin">
+                        <div class="w3-container w3-padding w3-orange">
+                            <h4>Prices</h4>
+                        </div>
+                        <ul class="w3-ul w3-hoverable w3-white">
+                            <li class="w3-padding-16">
+
+                                <span class="w3-large">
+                                    Our services starts at R600.00 excluding parts (parts to be supplied by client)
+                                </span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+
+                                <span class="w3-large">
+                                    Replacement of front brake pads R300.00
+                                </span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+
+                                <span class="w3-large">Electronic Diagnosis with print out R300.00</span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+
+                                <span class="w3-large">
+                                    Replacement of rear linings @ R450.00
+                                </span>
+                                <br>
+
+                            </li>
+                            <li class="w3-padding-16">
+
+                                <span class="w3-large">
+                                    R600.00 per hour for passenger and light commercial vehicles.
+                                </span>
+                                <br>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+
+
+                    <div class="w3-white w3-margin">
+                        <div class="w3-container w3-padding w3-orange">
+                            <h4>Follow Me</h4>
+                        </div>
+                        <div class="w3-container w3-xlarge w3-padding">
+
+                           
+                            <a href="https://www.instagram.com/makhado_auto_general_trading/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                    <hr>
+
+                   
+
+                    <!-- END About/Intro Menu -->
+                </div>
+
+                <!-- END GRID -->
+            </div>
+
+            <!-- END w3-content -->
+        </div>
+
+        <!-- Subscribe Modal -->
+        <div id="subscribe" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content" style="padding:32px">
+                <div class="w3-container w3-white">
+                    <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                    <h2 class="w3-wide">SUBSCRIBE</h2>
+                    <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                    <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer onclick="document.location='Admin.html'" class="w3-container w3-orange" style="padding:32px">
+            <p style="text-align:center">@2023 Copyright:Tinashe Mupoperi,Mulamuleli Mammba,Hlulani Tshuma,Ronewa Amos Mulele</p>
+
+        </footer>
+    </div>
+    <script>
+        // Toggle between hiding and showing blog replies/comments
+        document.getElementById("myBtn").click();
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function likeFunction(x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "✓ Liked";
+        }
+    </script>
+
+
+
+
+
+
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+</body>
+</html>
